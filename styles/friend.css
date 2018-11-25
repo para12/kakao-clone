@@ -40,3 +40,58 @@
   font-size: 14px;
   font-weight: 600;
 }
+
+.friends .favorite_friend_profile .favorite_friend_profile_header {
+  padding: 7px 0px 0px 7px;
+}
+
+.friends
+  .favorite_friend_profile
+  .favorite_friend_profile_header
+  .favorite_friend_profile_text {
+  color: #a6a2a2;
+  font-size: 10px;
+}
+
+.friends .favorite_friend_profile .favorite_friend_profile_body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 0.5px #f4f0f0 solid;
+  padding: 12px;
+}
+
+.friends .favorite_friend_profile .favorite_friend_profile_body img {
+  height: 50px;
+  width: 50px;
+  border-radius: 40%;
+}
+
+.friends
+  .favorite_friend_profile
+  .favorite_friend_profile_body
+  .me_profile_text {
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+footer .footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding-right: 10px;
+  font-size: 22px;
+}
+
+footer .footer_wrapper .footer_friends,
+.footer_chats,
+.footer_news,
+.footer_more {
+  color: rgb(55, 55, 56);
+}
