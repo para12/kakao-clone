@@ -1,3 +1,11 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -14,6 +22,11 @@
   font-weight: 800;
   padding: 12px;
   margin-top: 5px;
+}
+
+main {
+  position: relative;
+  top: 55px;
 }
 
 .header__bottom:last-child i {
@@ -65,6 +78,13 @@
   height: 50px;
   width: 50px;
   border-radius: 40%;
+  transition: all 0.5s ease-in-out;
+}
+
+.friends .favorite_friend_profile .favorite_friend_profile_body img:hover {
+  height: 60px;
+  width: 60px;
+  border-radius: 10%;
 }
 
 .friends
@@ -95,4 +115,56 @@ footer .footer_wrapper .footer_friends,
 .footer_news,
 .footer_more {
   color: rgb(55, 55, 56);
+}
+
+html {
+  height: 100%;
+}
+
+.bigscreen {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: green; */
+  display: none;
+  /* z-index: 2; */
+}
+
+@media screen and (min-width: 530px) {
+  .bigscreen {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    z-index: 2;
+  }
+}
+
+main {
+  animation: 0.5s popup ease-in-out;
+}
+
+@keyframes popup {
+  from {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
